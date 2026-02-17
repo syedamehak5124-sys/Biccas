@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Biccas Landing</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f3f7f5;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Navbar */
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 28px;
+    color: #2dbd85 !important;
+  }
+
+  /* Buttons */
+  .btn-main {
+    background: #2dbd85;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 25px;
+  }
+  .btn-main:hover {
+    background: #249e6f;
+    color: #fff;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 80px 0;
+  }
+  .hero h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .hero-card {
+    background: #2dbd85;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  /* Brands */
+  .brands {
+    padding: 60px 0;
+    text-align: center;
+  }
+  .brands span {
+    font-weight: 600;
+    color: #9aa4a6;
+  }
+
+  /* Features */
+  .features {
+    padding: 80px 0;
+  }
+  .feature-card {
+    background: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  .feature-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .feature-card h5 {
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .feature-card p {
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #6c757d;
+  }
+
+  /* Pricing */
+  .pricing {
+    padding: 80px 0;
+    background: #f8f9f8;
+    text-align: center;
+  }
+  .btn-toggle-group .btn {
+    border-radius: 30px;
+    min-width: 110px;
+  }
+  .btn-toggle-group .btn:first-child {
+    border-radius: 30px 0 0 30px;
+  }
+  .btn-toggle-group .btn:last-child {
+    border-radius: 0 30px 30px 0;
+  }
+  .card.rounded-4 {
+    border-radius: 1.5rem !important;
+  }
+  .pricing .card.bg-success {
+    position: relative;
+    overflow: hidden;
+  }
+  .pricing .card.bg-success small {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    color: #2dbd85;
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-transparent py-4">
+  <div class="container">
+    <a class="navbar-brand" href="#">Biccas</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="nav">
+      <ul class="navbar-nav gap-4">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <a href="#" class="me-3 text-dark text-decoration-none">Login</a>
+      <a href="#" class="btn btn-main">Sign Up</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6">
+        <h1>We're here to <br /> Increase your <br /> Productivity</h1>
+        <p class="text-muted mt-4">
+          Let's make your work more organized and easily using the Taskio Dashboard
+          with many of the latest features in managing work every day.
+        </p>
+        <div class="d-flex gap-3 mt-4">
+          <a href="#" class="btn btn-main">Try free trial</a>
+          <a href="#" class="btn btn-outline-dark rounded-pill">View Demo</a>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mt-5 mt-lg-0">
+        <div class="hero-card shadow">
+          <img
+            src="./Frame 46 (1).png"
+            class="img-fluid rounded"
+            alt="Hero Image"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section class="brands">
+  <div class="container">
+    <h4 class="fw-bold mb-5">More than 25,000 teams use Collabs</h4>
+
+    <div class="row justify-content-center g-4">
+      <div class="col-6 col-md-2 d-flex align-items-center justify-content-center gap-2">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968906.png" width="25" alt="Unsplash" />
+        <span>Unsplash</span>
+      </div>
+      <div class="col-6 col-md-2 d-flex align-items-center justify-content-center gap-2">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968875.png" width="25" alt="Notion" />
+        <span>Notion</span>
+      </div>
+      <div class="col-6 col-md-2 d-flex align-items-center justify-content-center gap-2">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" width="25" alt="INTERCOM" />
+        <span>INTERCOM</span>
+      </div>
+      <div class="col-6 col-md-2 d-flex align-items-center justify-content-center gap-2">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968923.png" width="25" alt="Descript" />
+        <span>Descript</span>
+      </div>
+      <div class="col-6 col-md-2 d-flex align-items-center justify-content-center gap-2">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968841.png" width="25" alt="Grammarly" />
+        <span>Grammarly</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="container">
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-4 col-md-12">
+        <h2 class="fw-bold mb-0">
+          Our Features <br />
+          you can get
+        </h2>
+      </div>
+
+      <div class="col-lg-5 col-md-12">
+        <p class="text-muted mb-0">
+          We offer a variety of interesting features that help increase your
+          productivity and manage your project easily.
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-12 text-lg-end mt-3 mt-lg-0">
+        <a href="#" class="btn btn-main">Get Started</a>
+      </div>
+    </div>
+
+    <!-- Feature Cards with Image and Text -->
+    <div class="row g-4">
+      <div class="col-md-4 d-flex">
+        <div class="feature-card flex-fill">
+          <img src="./Collboration Teams (1) (1).svg" alt="Feature 1" />
+          <div class="p-3">
+            <h5>Collboration Teams </h5>
+            <p>Here you can handle projects together with team virtually</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex">
+        <div class="feature-card flex-fill">
+          <img src="./cloud.svg" alt="Feature 2" />
+          <div class="p-3">
+            <h5>Cloud Storage</h5>
+            <p>No nedd to worry about storage because we provide storage up to 2 TB</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex">
+        <div class="feature-card flex-fill">
+          <img src="./daily.svg" alt="Feature 3" />
+          <div class="p-3">
+            <h5>Daily Analytics</h5>
+            <p>We always provide useful informatin to make it easier for you every day</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING PLANS -->
+<section class="pricing py-5" style="background: #f8f9f8;">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-0">Choose Plan<br>That’s Right For You</h2>
+    <p class="text-muted mb-4" style="font-size: 14px;">
+      Choose plan that works best for you, feel free to contact us
+    </p>
+
+    <!-- Toggle Monthly/Yearly -->
+    <div class="d-inline-flex rounded-pill shadow-sm mb-5" style="background:#fff;">
+      <button class="btn btn-sm px-4" style="border-radius:30px 0 0 30px; border:1px solid #d1d5db;">
+        Bil Monthly
+      </button>
+      <button class="btn btn-sm btn-success px-4" style="border-radius:0 30px 30px 0; border:1px solid #2dbd85; border-left:none;">
+        Bil Yearly
+      </button>
+    </div>
+
+    <!-- Pricing Cards -->
+    <div class="row g-4 justify-content-center">
+
+      <!-- Free Plan -->
+      <div class="col-md-4">
+        <div class="card shadow-sm rounded-4 p-4 h-100" style="background:#fff;">
+          <h5 class="fw-bold">Free</h5>
+          <p class="text-muted mb-4" style="font-size: 14px;">Have a go and test your superpowers</p>
+          <div class="display-4 fw-bold mb-3" style="font-size: 48px; line-height: 1;">0</div>
+          <ul class="list-unstyled text-start mb-4" style="font-size: 14px;">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> 2 Users</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> 2 Files</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Public Share & Comments</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Chat Support</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> New income apps</li>
+          </ul>
+          <a href="#" class="btn btn-outline-success rounded-pill px-4 py-2" style="font-weight: 600;">Signup for free</a>
+        </div>
+      </div>
+
+      <!-- Pro Plan -->
+      <div class="col-md-4">
+        <div class="card shadow-sm rounded-4 p-4 h-100" style="background: #56b88f; color: white; position: relative; overflow: hidden;">
+          <h5 class="fw-bold">Pro</h5>
+          <p style="font-size: 14px;">Experiment the power of infinite possibilities</p>
+          <div class="display-4 fw-bold mb-2" style="font-size: 48px; line-height: 1;">8</div>
+          <small style="background: white; color: #56b88f; padding: 5px 20px; border-radius: 30px; font-weight: 600; font-size: 14px; position: absolute; top: 90px; left: 50%; transform: translateX(-50%);">
+            Save $50 a year
+          </small>
+          <ul class="list-unstyled text-start mb-4 mt-5" style="font-size: 14px;">
+            <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: white;"></i> 4 Users</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: white;"></i> All apps</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: white;"></i> Unlimited editable exports</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: white;"></i> Folders and collaboration</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: white;"></i> All incoming apps</li>
+          </ul>
+          <a href="#" class="btn btn-light rounded-pill px-4 py-2 fw-semibold">Go to pro</a>
+        </div>
+      </div>
+
+      <!-- Business Plan -->
+      <div class="col-md-4">
+        <div class="card shadow-sm rounded-4 p-4 h-100" style="background:#f6f9f8;">
+          <h5 class="fw-bold">Business</h5>
+          <p class="text-muted mb-4" style="font-size: 14px;">Unveil new superpowers and join the Design League</p>
+          <div class="display-4 fw-bold mb-3" style="font-size: 48px; line-height: 1;">16</div>
+          <ul class="list-unstyled text-start mb-4" style="font-size: 14px;">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> All the features of pro plan</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Account success Manager</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Single Sign-On (SSO)</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Co-conception program</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Collaboration-Soon</li>
+          </ul>
+          <a href="#" class="btn btn-outline-success rounded-pill px-4 py-2" style="font-weight: 600;">Goto Business</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS Bundle -->
+<!-- TESTIMONIAL + CONTACT + FOOTER SECTION -->
+<section class="py-5" style="background: linear-gradient(135deg,#0f1b2e,#1a2a44); color:white;">
+  <div class="container">
+
+    <!-- TOP CONTENT -->
+    <div class="row align-items-center g-5 mb-5">
+
+      <!-- LEFT SIDE -->
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3" style="font-size:38px;">
+          People are Saying <br> About DoWhith
+        </h2>
+
+        <p class="text-light opacity-75 mb-4" style="max-width:450px;">
+          Everything you need to accept to payment and grow your
+          money of manage anywhere on planet
+        </p>
+
+        <div class="display-1 opacity-25 mb-3" style="line-height:0.8;">“</div>
+
+        <p class="mb-4" style="max-width:500px;">
+          I am very helped by this E-wallet application, my days are very easy
+          to use this application and its very helpful in my life, even I can
+          pay a short time 😊
+        </p>
+
+        <small class="opacity-75 d-block mb-4">— Aria Zinanrio</small>
+
+        <!-- AVATARS -->
+        <div class="d-flex align-items-center gap-3">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg"
+               class="rounded-circle"
+               width="50" height="50">
+
+          <img src="https://randomuser.me/api/portraits/men/45.jpg"
+               class="rounded-circle"
+               width="50" height="50">
+
+          <img src="https://randomuser.me/api/portraits/women/65.jpg"
+               class="rounded-circle"
+               width="50" height="50">
+
+          <img src="https://randomuser.me/api/portraits/women/44.jpg"
+               class="rounded-circle"
+               width="50" height="50">
+
+          <button class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center"
+                  style="width:50px;height:50px;">
+            <i class="bi bi-play-fill"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE FORM CARD -->
+      <div class="col-lg-6">
+        <div class="p-5 shadow-lg"
+             style="background:#1e2c42; border-radius:20px;">
+
+          <div class="text-center mb-4">
+            <div class="bg-success rounded-circle d-inline-flex align-items-center justify-content-center"
+                 style="width:70px;height:70px;">
+              <i class="bi bi-stack text-white fs-3"></i>
+            </div>
+            <h4 class="mt-3 fw-bold">Get Started</h4>
+          </div>
+
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email"
+                     class="form-control bg-light border-0 rounded-3"
+                     placeholder="Enter your email">
+            </div>
+
+            <div class="mb-4">
+              <label class="form-label">Message</label>
+              <textarea class="form-control bg-light border-0 rounded-3"
+                        rows="3"
+                        placeholder="What are you say ?"></textarea>
+            </div>
+
+            <button class="btn btn-success w-100 py-2 rounded-3 fw-semibold">
+              Request Demo
+            </button>
+
+            <p class="text-center mt-3 mb-0" style="font-size:13px; opacity:0.7;">
+              or Start Free Trial
+            </p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM FOOTER CONTENT -->
+    <div class="row mt-5 pt-5 border-top border-secondary">
+
+      <!-- BRAND -->
+      <div class="col-lg-4 mb-4">
+        <h3 class="fw-bold text-success">Biccas</h3>
+        <p class="opacity-75">Get started now try our product</p>
+
+        <div class="input-group mt-3" style="max-width:300px;">
+          <input type="email"
+                 class="form-control bg-transparent border border-secondary text-white rounded-start-pill"
+                 placeholder="Enter your email here">
+          <button class="btn btn-success rounded-end-pill">
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- SUPPORT -->
+      <div class="col-lg-2 col-md-4 mb-4">
+        <h6 class="fw-bold">Support</h6>
+        <ul class="list-unstyled mt-3">
+          <li class="mb-2 opacity-75">Help centre</li>
+          <li class="mb-2 opacity-75">Account information</li>
+          <li class="mb-2 opacity-75">About</li>
+          <li class="mb-2 opacity-75">Contact us</li>
+        </ul>
+      </div>
+
+      <!-- HELP -->
+      <div class="col-lg-3 col-md-4 mb-4">
+        <h6 class="fw-bold">Help and Solution</h6>
+        <ul class="list-unstyled mt-3">
+          <li class="mb-2 opacity-75">Talk to support</li>
+          <li class="mb-2 opacity-75">Support docs</li>
+          <li class="mb-2 opacity-75">System status</li>
+          <li class="mb-2 opacity-75">Covid response</li>
+        </ul>
+      </div>
+
+      <!-- PRODUCT -->
+      <div class="col-lg-3 col-md-4 mb-4">
+        <h6 class="fw-bold">Product</h6>
+        <ul class="list-unstyled mt-3">
+          <li class="mb-2 opacity-75">Update</li>
+          <li class="mb-2 opacity-75">Security</li>
+          <li class="mb-2 opacity-75">Beta test</li>
+          <li class="mb-2 opacity-75">Pricing product</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 mt-4 border-top border-secondary small opacity-75">
+      <div>© 2022 Biccas Inc. Copyright and rights reserved</div>
+      <div>
+        Terms and Conditions &nbsp; • &nbsp; Privacy Policy
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
